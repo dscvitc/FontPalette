@@ -1,6 +1,5 @@
 <script lang="ts">
   import { invoke } from "@tauri-apps/api/tauri"
-
   let shortFontList = ""
 
   async function getFonts(){
@@ -10,7 +9,7 @@
 
 <div>
   <form class="row" on:submit|preventDefault={getFonts}>
-    <button type="submit">Get Fonts</button>
+    <button class="color-red-500" type="submit">Get Fonts</button>
   </form>
-  <p>{shortFontList}</p>
+  <p class="border border-red-100">{shortFontList}</p>
 </div>
