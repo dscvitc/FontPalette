@@ -7,9 +7,13 @@
   }
 </script>
 
-<div>
+<div class="w-full">
   <form class="row" on:submit|preventDefault={getFonts}>
-    <button class="color-red-500" type="submit">Get Fonts</button>
-  </form>
-  <p class="border border-red-100">{shortFontList}</p>
+    <button type="submit">Get Fonts</button>
+  </form> 
+    {#if shortFontList!=""}
+        {#each shortFontList.split(",") as font}
+            <a href="/"><div class="w-full m-2 p-6 text-black hover:text-blue-600 bg-stone-300 rounded-md text-left">{font}</div></a>
+        {/each}
+    {/if}
 </div>
