@@ -15,7 +15,8 @@ Currently working on:
 - Load and send list of fonts to frontend and view them.
 
 ## To run:
-
+Install dependencies first
+[tauri dependencies](https://tauri.app/v1/guides/getting-started/prerequisites/)
 Clone the repo, and run:
 ```bash
 yarn
